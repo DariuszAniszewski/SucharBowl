@@ -6,7 +6,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^$', 'SucharBowl.views.home', name='home'),
+    url(r'^api/organisations/add$', 'suchar.views.addOrganisation'),
     # url(r'^SucharBowl/', include('SucharBowl.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:

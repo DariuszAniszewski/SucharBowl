@@ -11,8 +11,8 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '',                      # Or path to database file if using sqlite3.
+        'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': 'SucharBowl/db.sqlite3',                      # Or path to database file if using sqlite3.
         'USER': '',                      # Not used with sqlite3.
         'PASSWORD': '',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
@@ -116,6 +116,7 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'suchar',
+    'south',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -146,3 +147,13 @@ LOGGING = {
         },
     }
 }
+
+
+DEFAULT_FROM_EMAIL  = "SucharBowl <sucharbowl@gmail.com>"
+SERVER_EMAIL = 'sucharbowl@gmail.com>'
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'sucharbowl@gmail.com>'
+EMAIL_HOST_PASSWORD = 'sucharek2012'
+EMAIL_PORT = 587
+EMAIL_SUBJECT_PREFIX = "[SUCHAR]"
