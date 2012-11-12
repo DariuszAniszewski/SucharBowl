@@ -23,8 +23,7 @@ def addOrganisation(request):
     organisation.email = email
     organisation.save()
 
-    send_mail('Welcome to SucharBowl', 'Welcome to SucharBowl !', "sucharbowl@gmail.com",
-    [email], fail_silently=False)
+    #send_mail('Welcome to SucharBowl', 'Welcome to SucharBowl !', "sucharbowl@gmail.com",[email], fail_silently=False)
 
 
     response = {
